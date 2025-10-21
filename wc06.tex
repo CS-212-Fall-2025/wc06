@@ -29,7 +29,7 @@
     $$(Q, \Sigma, \Gamma, \delta, q_0, q_{accept}, q_{reject})$$ 
     Where we keep everything same as the deterministic turing machine except for the transition function. The transition function $\delta$ is now defined as: 
     $$\delta: Q \times \Gamma \times \Gamma \to Q \times \Gamma \times\{L,R\} \times \{P, L, R\}$$
-    Here the transition $\delta(q,a,b) = (r,y,d_1,d_2)$ represents that the machine on state $q$ read $a$ on the input tape and $b$ on the binary tree then moved to state $r$, wrote $y$ on the binary tree, the input tape head moved in direction $d_1$ (where $d_1$ can be $R$ for more right and $L$ for move left), and the binary tree head moved in direction $d_2$ (where $d_1$ can be $R$ for move to the right child, $L$ for move left child, or $P$ for move to the parent).
+    Here the transition $\delta(q,a,b) = (r,y,d_1,d_2)$ represents that the machine on state $q$ read $a$ on the input tape and $b$ on the binary tree then moved to state $r$, wrote $y$ on the binary tree, the input tape head moved in direction $d_1$ (where $d_1$ can be $R$ for more right and $L$ for move left), and the binary tree head moved in direction $d_2$ (where $d_2$ can be $R$ for move to the right child, $L$ for move left child, or $P$ for move to the parent).
 
    Show that binary tree turing machine is equivalent to a deterministic turing machine in terms of computability. That is show that a language is Turing-recognizable if and only if some binary tree Turing machine recognizes it.
  
